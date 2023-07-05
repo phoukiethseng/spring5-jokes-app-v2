@@ -5,8 +5,8 @@
     <title>Spring Jokes App</title>
 </head>
     <body>
-        <h1 th:text="${jokeAuthor}"></h1>
-        <blockquote th:text="${jokeQuote}"></blockquote>
+        <h1 th:text="${joke.author}"></h1>
+        <blockquote th:text="${joke.quote}"></blockquote>
         <button onClick={location.reload();}>Next Quote</button>
     </body>
 </html>

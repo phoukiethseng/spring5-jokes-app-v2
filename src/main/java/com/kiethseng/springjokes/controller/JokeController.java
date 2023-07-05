@@ -16,8 +16,7 @@ public class JokeController {
 
     @GetMapping("/")
     public String getRandomQuotes(Model model) {
-        model.addAttribute("jokeQuote", quoteService.getRandomQuote());
-        model.addAttribute("jokeAuthor", quoteService.getAuthorName());
+        model.addAttribute("joke", quoteService.getRandomQuote());
         return "index";
     }
 }

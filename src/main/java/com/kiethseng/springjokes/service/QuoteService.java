@@ -1,6 +1,7 @@
 package com.kiethseng.springjokes.service;
 
+import com.kiethseng.springjokes.model.Quote;
+
 public interface QuoteService {
-    String getRandomQuote();
-    String getAuthorName();
+    Quote getRandomQuote();
 }
